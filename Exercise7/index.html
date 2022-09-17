@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!--creates an user input function-->
+        <input id="name-input" type="text" placeholder="Enter your name" />
+        <!--interactive functiin that'll display user input-->
+<button id="my-button">Click Me</button>
+<!--script progams both functions to 'alert' what user input has been submitted-->
+<script>
+  var myButton = document.querySelector('#my-button');
+  var nameInput = document.querySelector('#name-input');
+
+  myButton.addEventListener('click', function () {
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
+    </body>
+</html>
